@@ -279,7 +279,7 @@ const CreateCustomerScreen = ({ match, history }) => {
                            onChange={(e) => setCustCompanyType(e.target.value)}
                         >
                            <option value="PVT LTD">PVT LTD</option>
-                           <option value="OPC">OPC</option>
+                           // <option value="OPC">OPC</option>
                            <option value="Partnership Firm">Partnership Firm</option>
                            <option value="LLP">LLP</option>
                            <option value="Proprietor">Proprietor</option>
