@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"');
+
+/* https://colorpalettes.net/color-palette-1567/ */
+
+:root {
+  --main-color: #e84347;
+  --color-dark: #e84347;
+  --text-grey: #8390a2;
+  --primary-color: #8390a2;
+  --secondary-color: #8390a2;
+  --primary-font-color: #8390a2;
+  --secondary-font-color: #8390a2;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Muli", Arial, sans-serif; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 500;
+  color: var(--main-color);
+  letter-spacing: 1px !important;
+}
+
+.button-class {
+  background-color: var(--main-color);
+  color: #e5fcff;
+}
+
+.reset-button-class {
+  background-color: lightgray;
+  color: #1a1a1a;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.main-content {
+  position: relative;
+  margin-left: 240px;
+  /* margin-left: 230px;
+  margin-right: -30px; */
+  transition: margin-left 500ms;
+}
+
+header {
+  position: fixed;
+  left: 240px;
+  top: 0;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  height: 60px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: left 500ms;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper input {
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  height: 38px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons span,
+.social-icons div {
+  margin-left: 1.2rem;
+}
+
+.social-icons div {
+  height: 38px;
+  width: 38px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url(img/1.jpg); */
+  border-radius: 50%;
+}
+
+main {
+  margin-top: 60px;
+  background: #f6f8fa;
+  min-height: 90vh;
+  padding: 1rem 3rem;
+}
+
+.dash-title {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.dash-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.address-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.icon-color {
+  /* color: #e5fcff; */
+  color: #fff;
+}
+
+.card-single {
+  background: #fff;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  box-shadow: 1px 1px 1px rgba(243, 3, 3, 0.2);
+
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 1.3rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-footer {
+  padding: 0.2rem 1rem;
+  background: #f9fafc;
+  /* border-top: 1px solid red; */
+}
+
+.card-footer a {
+  color: var(--main-color);
+}
+
+.recent {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-column-gap: 1.5rem;
+}
+
+.activity-card,
+.summary-card,
+.bday-card {
+  background: #fff;
+  border-radius: 7px;
+}
+
+.activity-card h3 {
+  color: var(--text-grey);
+  margin: 1rem;
+}
+
+.activity-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-card thead {
+  background: #efefef;
+  text-align: left;
+}
+
+th,
+td {
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  color: var(--color-dark);
+}
+
+td {
+  font-size: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fafc;
+}
+
+.badge {
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.badge.success {
+  background: #def7ec;
+  color: var(--main-color);
+}
+
+.badge.warning {
+  background: #f0f6b2;
+  color: orange;
+}
+
+.td-team {
+  display: flex;
+  align-items: center;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.summary-card {
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.summary-single {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.summary-single span {
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1rem;
+}
+
+.summary-single h5 {
+  color: var(--main-color);
+  font-size: 1.1rem;
+  margin-bottom: 0rem !important;
+}
+
+.summary-single small {
+  font-weight: 700;
+  color: var(--text-grey);
+}
+
+.bday-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.bday-card {
+  padding: 1rem;
+}
+
+.bday-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url(img/3.jpeg); */
+  margin-right: 0.7rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center button {
+  background: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 860px) {
+  .dash-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-single {
+    margin-bottom: 1rem;
+  }
+
+  .activity-grid {
+    display: block;
+  }
+
+  .summary {
+    margin-top: 1.5rem;
+  }
+
+  .loginFormContainer {
+    margin-top: 50px;
+    margin-left: 0px !important;
+    border: 0px solid blue !important;
+    border-radius: 10px;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dash-cards {
+    grid-template-columns: 100%;
+  }
+
+  .loginFormContainer {
+    margin-top: 50px;
+    margin-left: 0px !important;
+    border: 0px solid blue !important;
+    border-radius: 10px;
+    height: 80%;
+  }
+}
+
+.coll-panel-btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* general application CSS properties */
+.appFontColor {
+  color: var(--main-color);
+}
+
+.appSecondaryColor {
+  color: var(--main-color);
+}
+
+.appWhiteColor {
+  color: #fff;
+}
+
+.appBackgroundColor {
+  background-color: var(--main-color);
+}
+
+.appBorderColor {
+  border-color: #fff;
+}
+
+.footerColor {
+  color: black;
+}
+/* End of general application CSS properties */
+
+/* Login page CSS properties */
+.mainContainer {
+  height: 95vh;
+  background: #d7d7d7;
+}
+
+.screenContainer {
+  height: 100%;
+  background: #d7d7d7;
+}
+
+.loginContainer {
+  background: #fff;
+  margin: 40px;
+}
+
+.contentContainer {
+  background: #ffffff;
+  height: 100%;
+}
+
+.appTitle {
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+.loginFormContainer {
+  /* margin-top: 50px;
+  margin-left: 50px; */
+  margin: auto;
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 80%;
+}
+
+.moduleContainer {
+  height: 80%;
+  margin: auto;
+  border: 0px solid green;
+  border-radius: 10px;
+}
+
+.modules {
+  /* margin-top: 80px; */
+  margin: auto;
+  text-align: center;
+  background: #fff;
+}
+
+.divider {
+  border-left: 6px solid var(--main-color);
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-top: 8px;
+}
+
+.logoWidth {
+  width: 80%;
+}
+
+.myButton {
+  box-shadow: 0px 0px 0px 2px #d7d7d7;
+  background: linear-gradient(to bottom, #d7d7d7 5%, #d7d7d7 100%);
+  background-color: #d7d7d7;
+  border-radius: 10px;
+  border: 1px solid #d7d7d7;
+  /* display: inline-block; */
+  cursor: pointer;
+  color: rgb(14, 13, 13);
+  /* font-family: Arial; */
+  font-size: 25px;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-shadow: 0px 4px 0px lightgrey;
+}
+.myButton:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--main-color) 5%,
+    var(--main-color) 100%
+  );
+  background-color: #da6363;
+  text-shadow: 0px 0px 0px white;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+/* End of Login page CSS properties */
+
+/* CSS styling STARTS for Drop Down Menu */
+/* define a fixed width for the entire menu */
+/* .navigation {
+  width: 300px;
+} */
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  /* background-color: #ccc; */
+  text-decoration: none;
+  /* padding: 10px; */
+  /* color: #000; */
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+  background-color: #c5c5c5;
+  color: black;
+}
+
+/* when hovering over a .mainmenu item,
+display the submenu inside it.
+we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block !important;
+  max-height: 200px;
+  background-color: #575454;
+  color: black;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition-delay: 1s; /* delays for 1 second */
+  -webkit-transition-delay: 0.4s; /* for Safari & Chrome */
+}
+
+/*
+we now overwrite the background-color for .submenu links only.
+CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  /* background-color: #999; */
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* this is the initial state of all submenus.
+we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+/* CSS styling ends for Drop Down Menu */
+.clock {
+  padding: 4px;
+  background-color: rgba(87, 84, 84) !important;
+}
+
+.switch-off,
+.switch-on {
+  margin: -9px !important;
+}
+
+/* @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+} */
+
+/* .container {
+  width: 100%;
+  max-width: "100%";
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+/* Inactive tab */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: white;
+  background-color: red;
+  border-color: rgb(93, 94, 91);
+  border-radius: 0px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  color: black;
+  background-color: rgb(209, 199, 199);
+  border-radius: 0px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #737679;
+}
+
+/* .tab-content {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  padding: 0px;
+}
+
+.nav-tabs {
+  margin-bottom: 0;
+} */
+@media only screen and (max-width: 450px) {
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .loginFormContainer {
+    margin-top: 50px;
+    margin-left: 0px !important;
+    border: 0px solid blue !important;
+    border-radius: 10px;
+    height: 80%;
+  }
+
+  .loginContainer {
+    background: #fff;
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .myButton {
+    font-size: 18px;
+  }
+}
+
+/* (1366x768) WXGA Display */
+/* @media only screen and (min-width: 1025px) and (max-width: 1366px) { */
+@media only screen and (min-width: 1366px) {
+  .loginFormContainer {
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 85%;
+  }
+
+  .moduleContainer {
+    height: 85%;
+    margin: auto;
+    border: 0px solid green;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  .card-body span {
+    font-size: 18px;
+    color: #777;
+    padding-right: 1.4rem;
+  }
+
+  .card-body h5 {
+    color: var(--text-grey);
+    font-size: 18px;
+  }
+
+  .card-body h4 {
+    color: var(--color-dark);
+    font-size: 18px;
+    margin-top: 0.2rem;
+  }
+
+  .form-label {
+    font-size: 14px !important;
+  }
+}
+/* (1920x1080) Full HD Display */
+/* @media only screen and (min-width: 1370px) and (max-width: 1920px) { */
+@media only screen and (min-width: 1370px) {
+  /* insert styles here */
+  h1 {
+    font-size: 20px;
+  }
+
+  h2,
+  h3 {
+    font-size: 17px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 15px;
+  }
+
+  .card-body span {
+    font-size: 17px;
+    color: #777;
+    padding-right: 1.4rem;
+  }
+
+  .card-body h5 {
+    color: var(--text-grey);
+    font-size: 17px;
+  }
+
+  .card-body h4 {
+    color: var(--color-dark);
+    font-size: 17px;
+    margin-top: 0.2rem;
+  }
+
+  .form-label {
+    font-size: 12px !important;
+  }
+}
+
+/* @media print {
+  @page {
+    size: A4 portrait;
+    margin-left: 0cm;
+    margin-right: 0cm;
+  }
+} */
+canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-child purple {
+  border: 1px solid purple;
+}
+
+.grid-child green {
+  border: 1px solid green;
+}
+
+input[type="checkbox"] {
+  width: 20px; /*Desired width*/
+  height: 20px; /*Desired height*/
+}
+
+/**  DELETE FROM HERE **/
+.body-tabs.body-tabs-layout {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px;
+}
+
+.body-tabs.body-tabs-layout {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 0 30px;
+  border-top: 0;
+  border-bottom: #127ae2 solid 1px;
+}
+
+.body-tabs {
+  border-bottom: #227e2f solid 2px;
+}
+
+.body-tabs > .RRT__tab {
+  padding: 1rem 1.25rem;
+  font-weight: normal;
+  font-size: 0.88rem;
+}
+.body-tabs.body-tabs-alt > .RRT__tab {
+  padding: 1.3636363636rem 0.5rem;
+  font-weight: normal;
+  font-size: 0.86rem;
+  width: 33%;
+  text-align: center;
+}
+.body-tabs.body-tabs-alt .RRT__inkbar {
+  height: 2px;
+  margin-top: -2px;
+}
+
+.body-tabs.body-tabs-layout.body-tabs-big {
+  display: block !important;
+}
+.body-tabs.body-tabs-layout.body-tabs-big .RRT__tab {
+  display: inline-block !important;
+  padding: 0 1.5rem !important;
+}
+.body-tabs.body-tabs-layout.body-tabs-big .RRT__showmore {
+  margin-top: -20px;
+}
+
+.body-tabs.body-tabs-layout {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px;
+}
+
+/** DELETE TILL HERE **/

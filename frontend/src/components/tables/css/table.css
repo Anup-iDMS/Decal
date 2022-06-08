@@ -1,0 +1,71 @@
+table {
+  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  /* width: 100%; */
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table td {
+  align-content: center;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th,
+tfoot td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: lightgray;
+  color: white;
+}
+
+.tableIcon:hover {
+  cursor: pointer !important;
+}
+
+.tablePlacement {
+  margin-top: "15px";
+  margin-left: "15px";
+}
+
+.exportCSV {
+  margin-top: "15px";
+  margin-right: "15px";
+  width: "100%";
+}
+
+.tableColumnHeader {
+  color: rgb(87, 84, 84);
+  font-size: 0.8rem !important;
+}
+
+.customerTable th {
+  color: rgb(87, 84, 84);
+  font-size: 0.8rem !important;
+}
+
+.customerTable td {
+  color: rgb(87, 84, 84);
+  font-size: 0.8rem !important;
+}
+
+tfoot tr td {
+  color: rgb(87, 84, 84);
+  font-size: 1rem !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}

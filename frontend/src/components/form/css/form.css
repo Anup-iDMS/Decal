@@ -1,0 +1,90 @@
+/* This CSS file contains styling for all "form" fields */
+
+input[type="text"]:disabled {
+  background-color: darkgrey;
+  color: black;
+}
+
+input[type="text"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="password"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="textarea"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="number"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white !important;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="date"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+input[type="select"] {
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+textarea.form-control {
+  height: auto;
+  background-color: white;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+.custom-select {
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+.mandatory {
+  color: red;
+}
+
+.validation-error {
+  font-size: 80%;
+  color: red;
+  margin-top: 5px;
+}
+
+.numberInputStyle {
+  background-color: white !important;
+  border: 1px solid lightgray !important;
+  border-radius: 7px !important;
+}
+
+.form-label {
+  color: black !important;
+  font-size: 16px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.react-datepicker__input-container {
+  width: 130% !important;
+}

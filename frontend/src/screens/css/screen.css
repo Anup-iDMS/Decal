@@ -1,0 +1,88 @@
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.react-datepicker-wrapper {
+  width: 80%;
+}
+
+/** CSS details for Tax Invoice table in DRN Approval Screen */
+.taxinvoicetable {
+  background: "white";
+  width: "100%";
+  height: "100%";
+}
+
+.taxinvoicetable table {
+  font-family: "Poppins";
+}
+
+.taxinvoicetable p {
+  font-family: "Poppins";
+  color: black;
+  /* padding: 8px; */
+}
+
+.taxinvoicetable table td {
+  background-color: white;
+}
+
+.taxinvoicetable td,
+th {
+  font-family: "Poppins";
+  border: 1px solid black;
+  /* padding: 8px; */
+}
+
+.taxinvoicetable td {
+  align-content: center;
+  text-align: left;
+}
+
+.taxinvoicetable th,
+td {
+  font-size: 12px;
+  /* padding: 1rem 1rem; */
+  color: black;
+  /* font-family: "Poppins"; */
+}
+
+.taxinvoicetable hr {
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  border-width: 0;
+  background-color: black;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.taxinvoicetable .td-center-align {
+  text-align: center !important;
+}
+
+.taxinvoicetable table tr:nth-child(even) {
+  background-color: white !important;
+}
+
+#invoiceheading td {
+  text-align: center !important;
+  font-weight: bold;
+}
+
+.right-align {
+  text-align: right !important;
+  font-weight: bold;
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+.center-align-gray-background {
+  text-align: center !important;
+  background-color: lightgray;
+  font-weight: bold;
+}

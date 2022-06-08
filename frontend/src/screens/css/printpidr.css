@@ -1,0 +1,44 @@
+@media print {
+  /* .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+  @page {
+    size: A4 landscape;
+  } */
+}
+
+.tableFont {
+  font-family: "Poppins" !important;
+}
+
+.page {
+  /* width: 21cm;
+  min-height: 29.7cm; */
+  padding: 20px /*2cm*/;
+  margin: 50px /*1cm*/ auto;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: "Arial" !important;
+}
+
+.A4 {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.A5 {
+  background: white;
+  width: 14.8cm;
+  height: 21cm;
+}
