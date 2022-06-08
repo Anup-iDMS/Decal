@@ -297,7 +297,7 @@ const CreateCustomerScreen = ({ match, history }) => {
               <Col lg={4} md={12} xs={12}>
                 <Form.Group controlId='custCompanyType'>
                   <Form.Label>
-                    Type of Company<span className='mandatory'>*</span>
+                    Company Type<span className='mandatory'>*</span>
                   </Form.Label>
                   <Form.Control
                     as='select'
